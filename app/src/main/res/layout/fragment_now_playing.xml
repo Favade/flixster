@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="10dp"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <ImageView
+        android:id="@+id/movieImageView"
+        android:layout_width="152dp"
+        android:layout_height="214dp"
+        android:adjustViewBounds="true"
+        android:contentDescription="@string/movie_poster_image"
+        android:scaleType="fitCenter"
+        tools:src = "@drawable/minions"
+        />
+
+    <TextView
+        android:maxLines="2"
+        android:textColor="@color/black"
+        android:id="@+id/tvMovieTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_toEndOf="@+id/movieImageView"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        tools:text="Minions: Rise of Gru" />
+
+    <TextView
+        android:id="@+id/tvMovieDesc"
+        android:layout_marginStart="15sp"
+        android:textSize="15sp"
+        android:layout_width="wrap_content"
+        android:layout_toEndOf="@id/movieImageView"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvMovieTitle"
+        android:layout_marginTop="2dp"
+        android:ellipsize="end"
+        tools:text="Surrounded to me occasional pianoforte alteration unaffected impossible ye. For saw half than cold. Pretty merits waited six talked pulled you. Conduct replied off led whether any shortly why arrived adapted.Numerous ladyship so raillery humoured goodness received an. So narrow formal length my highly longer afford oh. Tall neat he make or at dull ye." />
+</RelativeLayout>
